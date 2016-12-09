@@ -7,7 +7,7 @@ var marker;
        
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 45.523, lng: -122.676},
-      scrollwheel: false,
+      scrollwheel: true,
       zoom: 10
         
     });
