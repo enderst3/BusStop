@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def stop_finder(request):
+
+    context = {}
+
+    return render(request, 'secrets.html', context)

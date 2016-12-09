@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+    {%  load static %}   
+    <title>Bus Stop Finder</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bus_stop.css' %}"> 
+    
+    </head>
+    
+    <body class="container">
+        <header>
+            <h1>Click the button to get the nearest bus stops.</h1><br>
+            <button type="button" id="get_stops" class="btn btn-default btn-md">Click for Bus Stops</button>
+            <button type="button" id="refresh" class="btn btn-default btn-md">Refresh Map</button>
+            <br>
+            <br>
+        </header>
+        
+        <main>
+            <div id="map"></div><br>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Stop ID</th>
+                    <th>Street</th>
+                    <th>Direction</th>
+                    <th>Route Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </main>
+            
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="{% static 'js/bus_stop.js' %}"></script>
+        <script src="{% static 'js/secrets.js' %}"></script>
+        {% block content %}
+            
+        {%  endblock content %}
+        
+    </body>
+    
+</html>

@@ -1,0 +1,83 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    background-image: url('/static/images/portland.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header, main, footer {
+    background-color: rgba(200, 200, 200, 0.9);
+    margin: 10px;
+    border-color: mediumspringgreen;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    color: black;
+    opacity: 0.95;
+}
+
+header {
+    order: 1;
+    width: 80%;
+    display: block;
+    overflow: auto;
+    text-align: center;
+}
+
+header > h1 {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: serif;
+    font-size: 42px;
+}
+
+main {
+    z-index: 999;
+    order: 2;
+    width: 80%;
+    display: block;
+    overflow: auto;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.btn {
+    background-color: mediumspringgreen;
+    color: black;
+
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#map {
+    margin-top: 20px;
+    height: 500px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
